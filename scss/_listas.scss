@@ -1,0 +1,13 @@
+$colores:
+blue,
+red,
+green;
+
+
+.button-ok {
+    color: nth($list: $colores, $n:2 );
+}
+
+.button-not {
+    color: nth($list: $colores, $n:1 );
+}

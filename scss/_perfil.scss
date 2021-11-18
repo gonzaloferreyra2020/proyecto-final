@@ -1,0 +1,16 @@
+/* flexbox perfil */
+.container-perfil{
+    display: flex;
+    flex-direction: column;
+    border:solid black;
+    justify-content: center;
+    flex-basis: auto;
+    padding: 50px;
+
+}
+
+/* padding de la pantalla del perfil */
+.perfil{
+    padding: 200px;
+}
+

@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'listas';
+
+
+/* header */
+header{
+    background-color: rgb(255, 209, 136);
+    border-bottom: solid yellowgreen;
+    nav{
+        padding: $padding-general;
+        ul{
+            li{
+                list-style: none;
+
+            }
+
+            
+        }
+    }
+    @media screen and (max-width:968px){
+        background-color: cadetblue;
+    }
+}
+
+
+/*color para el h1 */
+h1 {
+    color:rgb(69, 126, 69);
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    
+}
+
+
+/*centrado de menu*/
+.menu{
+    text-align: center;
+}
+
+/*botones en horizontal*/
+.botonNav > li{
+    display: inline-block;
+    position: relative;
+}
+/* fuente y color de los botones del menu */
+.botonNav > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+/* resalta los botones con el puntero */
+.botonNav li a:hover{
+    color: #ce7d35;
+}
+
+/* botones desplegables */
+.destinos{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+}
+
+.destinos li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* aparece la lista de destinos */
+.botonNav li:hover .destinos{
+    visibility: visible;
+}
+
+
+

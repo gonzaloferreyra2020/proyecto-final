@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Guia de viajes</title>
+</head>
+<body>
+    
+    
+
+    <header id="header d-flex justify-content-center w-100"> 
+        
+        <!-- Titulo-->
+        <h1 class="centrado">
+            <i class="fas fa-route"></i> Guía de viajes Argentina
+        </h1>
+        <!--Botones-->
+        <nav class="menu">
+            <ul class="botonNav">
+                <!--Botones Simples-->
+                <li><a href="./index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="./src/paginas/perfil.html" ><i class="fa fa-user"></i>Perfil</a></li> 
+                <li><a href="./src/paginas/contacto.html"><i class="fas fa-question-circle"></i>Ayuda</a></li> 
+
+                <!--Boton Desplegable-->
+                <li><a href="#" ><i class="fas fa-map-marker-alt"></i>Destinos:</a> 
+                    <ul class="destinos">
+                        <li><a href="./src/paginas/patagonia.html">Patagonia</a></li>
+                        <li><a href="./src/paginas/cuyo.html">Cuyo</a></li>
+                        <li><a href="./src/paginas/regionPampeana.html">Region Pampeana</a></li>
+                        <li><a href="./src/paginas/noroeste.html">Noroeste</a></li>
+                        <li><a href="./src/paginas/litoral.html">Litoral</a></li>
+                    
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Presentacion-->
+    <section class="presentacion" >
+        <h3 class="centrado ">
+            Descubre los mejores lugares para visitar de nuestro país. 
+        </h3>
+        
+
+        <br>
+          <!-- Colocacion de imagenes-->
+          
+            <div class="centrado">
+                <div >
+                    <img src="./src/multimedia/fotos/1.jpg" alt="imagen 1" width="400" >
+                    <img src="./src/multimedia/fotos/2.jpg" alt="imagen 2" width="400" >
+                    <img src="./src/multimedia/fotos/3.jpg" alt="imagen 3" width="400" >
+                    <img src="./src/multimedia/fotos/4.jpg" alt="imagen 4" width="400" >
+                </div>
+                
+            </div>
+          
+    </section>
+  
+    
+    
+    <!-- Video de youtube-->
+    <section class="youtube d-flex justify-content-center">
+        <iframe class="centrado" width="600" height="400"  src="https://www.youtube.com/embed/bu-XsOIzbsA" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="centrado">
+        <p>Descubre los mejores lugares turísticos de Argentina que debes visitar sí o sí en tu próximo viaje a este increíble país.</p>
+    </section>
+
+    
+
+    <h2 class="centrado-destinos">
+        Top 5 destinos principales
+    </h2>
+
+
+      <!-- bootstrap -->
+         
+      <div class="d-flex justify-content-center">
+
+        <section class=" container">
+            <div class="row"> <!-- soy la fila-->
+                <div class="col-lg-6 col-md-4 col-12"> <!--elemento 1-->
+                    <p>Ya no tienes excusas para armar bien tu plan de viaje turístico a Argentina. Son variadas las alternativas que tienes
+                         para disfrutar de cada uno de sus espacios más emblemáticos. Con climas tan diversos como sus maravillas naturales que 
+                         complacerán a toda tu familia.</p>
+                </div>
+                <div class="col-lg-6 col-md-4 col-12"> <!-- elemento 2-->
+                    <div id="carouselExampleDark1" class="carousel carousel-dark slide "  data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./src/multimedia/fotos/valle-de-la-luna.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Valle de la luna</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./src/multimedia/fotos/cataratas2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Cataratas del Iguazú</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/tierra-del-fuego.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Tierra del fuego</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/aconcagua2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Aconcagua</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/humahuaca.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Quebrada de Humahuaca</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+
+        
+
+
+    <!-- Titulo de actividades-->
+    <section class="centrado">
+        <h2 class="centrado-destinos">
+            Actividades destacadas y excursiones.
+        </h2>
+    
+        <!-- bootstrap -->
+      <div class="d-flex justify-content-center ">
+
+      
+        <section class="container">
+            <div class="row"> <!-- soy la fila-->
+                
+                <div class="col-lg-6 col-md-4 col-12"> <!-- elemento 1-->
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide "  data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./src/multimedia/fotos/ski.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Ski</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./src/multimedia/fotos/rafting.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Rafting</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/trekking.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Trekking</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/Buceo.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Buceo</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./src/multimedia/fotos/paracaidismo.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              
+                              <p style="background-color: aliceblue;">Paracaidismo</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="col-lg-6 col-md-4 col-12"> <!--elemento 2-->
+                    <p>Todo lo que necesitás para organizar un Tour a Argentina en 2021. Las actividades que famosas que todo viajero debería hacer.</p>
+                </div>
+            </div>
+        </section>
+      </div> 
+
+    
+    </section>
+
+
+    <!-- parrafo final -->
+    <section class="centrado-destinos">
+        <p>Argentina es uno de los países más ricos y bellos del mundo. Cuenta con una innumerable cantidad de paisajes, ciudades, tradiciones y culturas dignos de visitar. </p>
+    </section>
+
+    
+
+    <br>
+
+    <!--footer-->
+    <footer class=" d-flex justify-content-center ">
+        <!--Botones-->
+        <nav class="nav-footer">
+            <ul class="centrado">
+                <li>Valóranos</li>
+                <li>
+                    <a href="./src/paginas/contacto.html">Contacto</a>
+                </li>
+                <li >
+                    <i class="fas fa-angle-up" ></i>
+                    <a href="#header">Ir arriba</a>
+                </li>
+                <li>
+                  <i class="fab fa-twitter-square"></i>
+                  <a href="https://twitter.com/tweeter?lang=es">tweeter</a>
+                </li>
+                <li>
+                  <i class="fab fa-facebook-square"></i>
+                  <a href="https://facebook.com">facebook</a>
+                </li>
+                <li>
+                  <i class="fab fa-instagram"></i>
+                  <a href="https://www.instagram.com/?hl=es">instagram</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Flecha para volver arriba-->
+
+        <!--Texto final-->
+        <p class="line-1 anim-typewriter">
+            Guía de viajes Argentina. Derechos reservados 2021
+        </p>
+
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+
+/* libreria de css*/ 
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+/* margen 0 al body */
+body{
+    margin: 0%;
+}
+
+
+/*color para el h1 */
+h1 {
+    color:rgb(69, 126, 69);
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    
+}
+
+/*color del menu*/
+header {
+    background-color: rgb(255, 209, 136);
+    
+}
+
+/* color del borde inferior del header */
+header{
+    border-bottom: solid yellowgreen;
+}
+
+/* tamaño y fuente de los parrafos */
+p{
+    color: cornflowerblue;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*centrado de menu*/
+.menu{
+    text-align: center;
+    
+}
+
+
+/*botones en horizontal*/
+.botonNav > li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+/* fuente y color de los botones del menu */
+.botonNav > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+}
+
+/* resalta los botones con el puntero */
+.botonNav li a:hover{
+    color: #ce7d35;
+
+}
+
+/* botones desplegables */
+.destinos{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    
+}
+
+.destinos li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* aparece la lista de destinos */
+.botonNav li:hover .destinos{
+    visibility: visible;
+    
+}
+
+
+/*clase para dar color a la presentacion*/
+.presentacion{
+    color: cornflowerblue;
+    font-size: 4em;
+
+}
+
+/* imagen de fondo presentacion */
+.presentacion{
+    margin: 0%;
+    
+    width: auto;
+    background-image:  url(../multimedia/fotos/fondo-glaciar.jfif);
+    
+    
+}
+
+/*texto de menu destinos a la izquierda*/
+.destinos{
+    background-color: rgb(255, 209, 136);
+    text-align: left;
+    
+}
+
+/*clase para centrar los formularios*/
+.centrado{
+    text-align: center;
+    margin:auto;
+	display:block;
+}
+
+/*quitar los puntos de las listas*/
+ul li {
+    list-style: none;
+}
+
+/* padding de la pantalla del perfil */
+.perfil{
+    padding: 200px;
+}
+
+/* padding del footer */
+.footer{
+    padding: 200px;
+}
+
+/* color del footer */
+footer {
+    background-color: rgb(69, 126, 69);
+    padding: 200px;
+  
+}
+
+/* color icono del titulo principal */
+.fa-route{
+    color: white;
+}
+
+/* imagen de fondo de contacto */ 
+.background-contacto{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 150px;
+    
+    background-image: url(../multimedia/fotos/background-contacto.jpg);
+    background-position: top;
+}
+
+/* aplicar margin al video de youtube */
+.youtube{
+    margin: 4em;
+}
+
+/* flexbox index */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    flex-basis: auto;
+    width: auto;
+    margin: 4em;
+}
+
+/* flexbox perfil */
+.container-perfil{
+    display: flex;
+    flex-direction: column;
+    border:solid black;
+    justify-content: center;
+    flex-basis: auto;
+    padding: 50px;
+    
+
+}
+
+/* tamaño de la fuente del footer */
+.nav-footer{
+    font-size: large;
+}
+
+/* tamaño del icono */ 
+.fa-angle-up{
+    font-size: x-large;
+    position: top;
+}
+
+/* grid contenedor de imagenes */
+.grid-container{
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    
+    grid-auto-rows: 150px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 150px;
+    gap: 10px;
+}
+
+/* imagenes  */
+.img{
+border: 2px solid black;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.grid-item{
+    position: relative;
+}
+/* Nombre de las imagenes */
+.img-title{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+}
+
+/* acomodar la imagen 2 al centro */
+.grid-item:nth-child(2){
+    grid-row-start: span 2;
+}
+
+/* media querys */
+/*mobile */
+@media screen and (max-width:480px ){
+    body {background-color: grey;
+    }
+    footer{background-color: #ce7d35;}
+    section{text-align: center;}
+    .presentacion h2{
+        font-size:36px
+    }
+}
+
+
+
+/* animacion de footer */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* animacion de footer */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

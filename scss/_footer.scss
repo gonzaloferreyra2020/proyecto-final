@@ -1,0 +1,54 @@
+
+
+/* color de footer */
+footer{
+    background-color: rgb(69, 126, 69);
+    padding: 200px;
+    
+}
+
+/* eliminar los puntos de las listas */
+ul li{
+  list-style: none;
+}
+
+/* tamaño de la fuente del footer */
+.nav-footer{
+    font-size: 1em;
+}
+
+/* tamaño del icono */ 
+.fa-angle-up{
+    font-size: x-large;
+    position: top;
+}
+
+
+/* animacion de footer */
+.line-1{
+    position: relative;
+    top: 0%;  
+    width: auto;
+    height: 2em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* animacion de footer */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  
