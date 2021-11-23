@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzaloferreyra2020/proyecto-final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzaloferreyra2020/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/gonzaloferreyra2020/proyecto-final#readme",
   "description": ""
 }
