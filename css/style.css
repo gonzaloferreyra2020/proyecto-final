@@ -259,6 +259,10 @@ section h3 {
   border: 0;
 }
 
+.form-contacto h2 {
+  text-align: center;
+}
+
 .form-contacto form button:hover,
 .form-contacto form button:focus {
   background: rgba(128, 128, 128, 0.644);
@@ -280,12 +284,12 @@ section h3 {
   padding: 0.5em;
 }
 
-/* pantalla escritorio */
+/* pantalla media */
 @media (min-width: 700px) {
   .background-contacto {
     padding: 2em;
-    margin-left: 25em;
-    margin-right: 25em;
+    margin-left: 2em;
+    margin-right: 2em;
     display: grid;
     grid-template-columns: 4fr 1fr;
   }
@@ -293,6 +297,24 @@ section h3 {
   .info-contacto {
     padding: 2em;
   }
+}
+/* pantalla completa */
+@media (min-width: 1200px) {
+  .background-contacto {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-contacto {
+    padding: 2em;
+  }
+}
+.cuadro {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
