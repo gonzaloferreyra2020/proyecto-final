@@ -10,3 +10,60 @@
 .margen-contacto{
     margin: 2em;
 }
+
+.background-contacto{
+    
+    padding: 1em;
+    margin: 1em;
+}
+
+.form-contacto form input,.form-contacto form textarea,
+.form-contacto form button{
+width: 100%;
+padding: 1em;
+border: none;
+background: none;
+outline: none;
+border-bottom: 1px solid olive;
+}
+
+.form-contacto form button{
+    background: grey;
+    border:0;
+}
+.form-contacto form button:hover,
+.form-contacto form button:focus{
+    background: rgba(128, 128, 128, 0.644);
+    color: blue;
+    transition: 1s;
+    outline: 0;
+}
+
+.info-contacto h4,.info-contacto ul, .info-contacto p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info-contacto ul{
+padding: 0;
+}
+
+.info-contacto ul li{
+    padding: .5em;
+}
+
+
+/* pantalla escritorio */
+@media (min-width:700px){
+
+    .background-contacto{
+        padding: 2em;
+        margin-left: 25em;
+        margin-right: 25em;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    .info-contacto{
+        padding: 2em;
+    }
+}
