@@ -11,8 +11,7 @@
 
 /* header */
 header {
-  background-color: #ffd188;
-  border-bottom: solid yellowgreen;
+  background-color: cadetblue;
 }
 header nav {
   padding: 20px;
@@ -79,10 +78,33 @@ h1 {
   visibility: visible;
 }
 
-/* color de footer */
+/* diseño del footer */
 footer {
-  background-color: #457e45;
-  padding: 200px;
+  background-color: #7e4572;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer nav.nav-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: cadetblue;
+  margin: 0;
+  padding: 2px;
+}
+footer nav.nav-footer ul li {
+  padding: 5px;
+}
+footer p.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  padding: 0;
 }
 
 /* eliminar los puntos de las listas */
@@ -102,41 +124,44 @@ ul li {
 }
 
 /* animacion de footer */
-.line-1 {
-  position: relative;
-  top: 0%;
-  width: auto;
-  height: 2em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
 /* animacion de footer */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  overflow: hidden;
+  border-right: 0.15em solid blue;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+  font-size: 1.6rem;
+  width: 0;
 }
 
-@keyframes typewriter {
+@keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 100%;
   }
 }
-@keyframes blinkTextCursor {
+@keyframes blink {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-color: transparent;
   }
   to {
-    border-right-color: transparent;
+    border-color: blue;
   }
 }
+.container-copyright {
+  display: inline-block;
+}
+
+/* diseño boton volver arriba */
+.boton-arriba {
+  width: 60px;
+  height: 60px;
+  color: black;
+  position: fixed;
+}
+
 /* margen 0 al body */
 body {
   margin: 0%;
@@ -183,6 +208,13 @@ section h3 {
   margin: 4em;
 }
 
+/* aplicar border radius al video de youtube */
+iframe {
+  border-radius: 30px;
+  width: 900px;
+  height: 450px;
+}
+
 .grid-item {
   position: relative;
 }
@@ -226,6 +258,19 @@ section h3 {
   padding: 150px;
   background-image: url(../src/multimedia/fotos/background-contacto.jpg);
   background-position: top;
+}
+
+.footer-contacto {
+  padding: 20px;
+  background-color: #7e4572;
+}
+.footer-contacto .nav-footer {
+  text-align: center;
+  padding: 20px;
+  color: cadetblue;
+}
+.footer-contacto .nav-footer ul li {
+  padding: 5px;
 }
 
 /* ubicacion del mapa patagonia*/
@@ -315,6 +360,19 @@ section h3 {
 .cuadro {
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-destinos {
+  background-color: #7e4572;
+  padding: 60px;
+}
+.footer-destinos nav {
+  text-align: center;
+  padding: 20px;
+  color: cadetblue;
+}
+.footer-destinos nav ul li {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

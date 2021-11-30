@@ -42,8 +42,15 @@ section h3{
 }
 
 /* aplicar margin al video de youtube */
-.youtube{
+.youtube {
     margin: 4em;
+    
+}
+/* aplicar border radius al video de youtube */
+iframe{
+    border-radius: 30px;
+    width: 900px;
+    height: 450px;
 }
 
 .grid-item{

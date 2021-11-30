@@ -1,10 +1,34 @@
 
 
-/* color de footer */
+/* diseño del footer */
 footer{
-    background-color: rgb(69, 126, 69);
-    padding: 200px;
-    
+  background-color: rgb(126, 69, 114);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    nav.nav-footer{
+      display: flex;
+      justify-content: center;
+      
+      align-items: center;
+      padding: 20px;
+      color: cadetblue;
+      margin: 0;
+      padding:2px;
+      ul li{
+        padding: 5px;
+      }
+    }
+    p.copyright{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0px;
+      padding: 0;
+
+    }
 }
 
 /* eliminar los puntos de las listas */
@@ -25,30 +49,34 @@ ul li{
 
 
 /* animacion de footer */
-.line-1{
-    position: relative;
-    top: 0%;  
-    width: auto;
-    height: 2em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
+
 
 /* animacion de footer */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,blinkTextCursor 500ms steps(44) infinite normal;
+  overflow: hidden;
+  border-right: .15em solid blue;
+  white-space: nowrap;
+  animation:  typing 1s steps(20, end) forwards, blink .8s infinite;
+  font-size: 1.6rem;
+  width: 0;
 }
-@keyframes typewriter{
+@keyframes typing {
     from{width: 0;}
-    to{width: 24em;}
+    to{width: 100%;}
   }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
-  
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: blue; }
+}
+.container-copyright{
+  display: inline-block;
+}
+
+
+/* diseño boton volver arriba */
+.boton-arriba{
+    width: 60px;
+    height: 60px;
+    color: black;
+    position: fixed;
+}  

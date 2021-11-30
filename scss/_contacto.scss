@@ -7,3 +7,16 @@
     background-image: url(../src/multimedia/fotos/background-contacto.jpg);
     background-position: top;
 }
+
+.footer-contacto{
+    padding: 20px;
+    background-color: rgb(126, 69, 114);
+    .nav-footer{
+        text-align: center;
+        padding: 20px;
+        color: cadetblue;
+            ul li{
+                padding: 5px
+            }
+    };
+}
