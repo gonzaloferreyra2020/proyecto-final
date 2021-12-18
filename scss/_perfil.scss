@@ -1,16 +1,83 @@
 /* flexbox perfil */
-.container-perfil{
+.cuadro-perfil{
     display: flex;
     flex-direction: column;
-    border:solid black;
+    border:solid cadetblue;
     justify-content: center;
-    flex-basis: auto;
-    padding: 50px;
-
+    padding: 10px;
+    align-content: center;
+    
 }
 
 /* padding de la pantalla del perfil */
 .perfil{
-    padding: 200px;
+    padding: 50px;
 }
 
+/* titulo */
+.registrate{
+    text-align: center;
+    color: blue;
+}
+
+/* subtitulo */
+.perfil-h4{
+    text-align: center;
+    
+}
+
+h5{
+    text-align: center;
+}
+
+
+
+.segunda-parte{
+    text-align: center;
+}
+
+
+.primera-parte{
+    
+    margin: auto;
+    text-align: center;
+
+    
+    input{
+        max-width: 300px;
+        width: 100%;
+        padding: 1em;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 1px solid olive;
+    }
+    button{
+        background: grey;
+         border:0;
+    }
+    
+}
+
+
+.segunda-parte input, button{
+
+    width: 100%;
+    padding: 1em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid olive;
+    background: grey;
+    border:0;
+    max-width: 200px;
+}
+
+/* hover en los botones */
+.cuadro-perfil button:hover,
+.cuadro-perfil button:focus{
+    background: rgba(128, 128, 128, 0.644);
+    color: blue;
+    transition: 1s;
+    outline: 0;
+}

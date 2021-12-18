@@ -19,13 +19,21 @@ section h3{
     font-size: 4em;
 }
 
+/* disminucion del tamaño */
+@media (max-width:700px){
+    section h3{
+        font-size: 2em;
+    }
+  h1{
+      font-size: 2em;
+  }
+}
 
-/* imagen de fondo presentacion */
+
+/* titulo presentacion */
 .presentacion{
-    margin: 0%;
-    padding: 4em;
     color: cornflowerblue;
-    background-image:  url(../src/multimedia/fotos/fondo-glaciar.jfif);
+   
 }
 
 /*texto de menu destinos a la izquierda*/
@@ -71,4 +79,10 @@ iframe{
     margin: 3em;
     text-align: center;
 	display:block;
+}
+
+/* posicionamiento del header */
+header {
+    position: relative;
+    z-index: 10;
 }

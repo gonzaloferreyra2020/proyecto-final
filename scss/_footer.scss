@@ -47,32 +47,6 @@ ul li{
     position: top;
 }
 
-
-/* animacion de footer */
-
-
-/* animacion de footer */
-.anim-typewriter{
-  overflow: hidden;
-  border-right: .15em solid blue;
-  white-space: nowrap;
-  animation:  typing 1s steps(20, end) forwards, blink .8s infinite;
-  font-size: 1.6rem;
-  width: 0;
-}
-@keyframes typing {
-    from{width: 0;}
-    to{width: 100%;}
-  }
-@keyframes blink {
-    from { border-color: transparent }
-    to { border-color: blue; }
-}
-.container-copyright{
-  display: inline-block;
-}
-
-
 /* diseño boton volver arriba */
 .boton-arriba{
     width: 60px;

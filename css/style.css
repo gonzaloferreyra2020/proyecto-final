@@ -123,37 +123,6 @@ ul li {
   position: top;
 }
 
-/* animacion de footer */
-/* animacion de footer */
-.anim-typewriter {
-  overflow: hidden;
-  border-right: 0.15em solid blue;
-  white-space: nowrap;
-  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
-  font-size: 1.6rem;
-  width: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  from {
-    border-color: transparent;
-  }
-  to {
-    border-color: blue;
-  }
-}
-.container-copyright {
-  display: inline-block;
-}
-
 /* diseño boton volver arriba */
 .boton-arriba {
   width: 60px;
@@ -182,12 +151,19 @@ section h3 {
   font-size: 4em;
 }
 
-/* imagen de fondo presentacion */
+/* disminucion del tamaño */
+@media (max-width: 700px) {
+  section h3 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+/* titulo presentacion */
 .presentacion {
-  margin: 0%;
-  padding: 4em;
   color: cornflowerblue;
-  background-image: url(../src/multimedia/fotos/fondo-glaciar.jfif);
 }
 
 /*texto de menu destinos a la izquierda*/
@@ -236,19 +212,83 @@ iframe {
   display: block;
 }
 
+/* posicionamiento del header */
+header {
+  position: relative;
+  z-index: 10;
+}
+
 /* flexbox perfil */
-.container-perfil {
+.cuadro-perfil {
   display: flex;
   flex-direction: column;
-  border: solid black;
+  border: solid cadetblue;
   justify-content: center;
-  flex-basis: auto;
-  padding: 50px;
+  padding: 10px;
+  align-content: center;
 }
 
 /* padding de la pantalla del perfil */
 .perfil {
-  padding: 200px;
+  padding: 50px;
+}
+
+/* titulo */
+.registrate {
+  text-align: center;
+  color: blue;
+}
+
+/* subtitulo */
+.perfil-h4 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+.segunda-parte {
+  text-align: center;
+}
+
+.primera-parte {
+  margin: auto;
+  text-align: center;
+}
+.primera-parte input {
+  max-width: 300px;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid olive;
+}
+.primera-parte button {
+  background: grey;
+  border: 0;
+}
+
+.segunda-parte input, button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid olive;
+  background: grey;
+  border: 0;
+  max-width: 200px;
+}
+
+/* hover en los botones */
+.cuadro-perfil button:hover,
+.cuadro-perfil button:focus {
+  background: rgba(128, 128, 128, 0.644);
+  color: blue;
+  transition: 1s;
+  outline: 0;
 }
 
 /* imagen de fondo de contacto */
@@ -258,25 +298,6 @@ iframe {
   padding: 150px;
   background-image: url(../src/multimedia/fotos/background-contacto.jpg);
   background-position: top;
-}
-
-.footer-contacto {
-  padding: 20px;
-  background-color: #7e4572;
-}
-.footer-contacto .nav-footer {
-  text-align: center;
-  padding: 20px;
-  color: cadetblue;
-}
-.footer-contacto .nav-footer ul li {
-  padding: 5px;
-}
-
-/* ubicacion del mapa patagonia*/
-.mapa {
-  padding: 4em;
-  text-align: center;
 }
 
 /* titulo de contacto */
@@ -362,6 +383,25 @@ iframe {
   margin-right: auto;
 }
 
+.footer-contacto {
+  padding: 20px;
+  background-color: #7e4572;
+}
+.footer-contacto .nav-footer {
+  text-align: center;
+  padding: 20px;
+  color: cadetblue;
+}
+.footer-contacto .nav-footer ul li {
+  padding: 5px;
+}
+
+/* ubicacion del mapa patagonia*/
+.mapa {
+  padding: 4em;
+  text-align: center;
+}
+
 .footer-destinos {
   background-color: #7e4572;
   padding: 60px;
@@ -373,6 +413,27 @@ iframe {
 }
 .footer-destinos nav ul li {
   padding: 5px;
+}
+
+/* ajuste del tamaño del mapa */
+.container-map {
+  display: grid;
+  place-items: center;
+  margin: 50px;
+}
+
+/* pantalla mobile */
+@media (max-width: 700px) {
+  .container-map iframe {
+    width: 360px;
+  }
+}
+/* flexbox en los destinos */
+.container-destinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
