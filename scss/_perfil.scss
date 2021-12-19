@@ -18,6 +18,7 @@
 .registrate{
     text-align: center;
     color: blue;
+    margin-top: 25px;
 }
 
 /* subtitulo */
@@ -80,4 +81,14 @@ h5{
     color: blue;
     transition: 1s;
     outline: 0;
+}
+
+/* tamaño mobile */ 
+@media (max-width:600px){
+   .segunda-parte button{
+       height: 50px;
+   }
+   .segunda-parte p{
+       font-size: 12px;
+   }
 }

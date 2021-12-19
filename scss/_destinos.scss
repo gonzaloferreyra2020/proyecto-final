@@ -28,18 +28,25 @@
 }
 
 
-/* pantalla mobile */
-@media (max-width:700px){
-
-  .container-map iframe{
-    width: 360px;
-  }
+.margin-destinos{
+ margin-top: 50px;
 }
 
-/* flexbox en los destinos */
+/* pantalla mobile */
+@media (max-width:600px){
+
 .container-destinos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 10px;
+}
+}
+
+
+/* pantalla completa */
+@media (min-width:1200px){
+
+  .container-destinos{
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 100px;
+}
 }

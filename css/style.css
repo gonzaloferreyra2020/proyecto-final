@@ -237,6 +237,7 @@ header {
 .registrate {
   text-align: center;
   color: blue;
+  margin-top: 25px;
 }
 
 /* subtitulo */
@@ -291,6 +292,16 @@ h5 {
   outline: 0;
 }
 
+/* tamaño mobile */
+@media (max-width: 600px) {
+  .segunda-parte button {
+    height: 50px;
+  }
+
+  .segunda-parte p {
+    font-size: 12px;
+  }
+}
 /* imagen de fondo de contacto */
 .background-contacto {
   margin-left: 25%;
@@ -350,6 +361,11 @@ h5 {
   padding: 0.5em;
 }
 
+@media (max-width: 699px) {
+  .info-contacto ul li {
+    color: #1cb3c7;
+  }
+}
 /* pantalla media */
 @media (min-width: 700px) {
   .background-contacto {
@@ -422,18 +438,23 @@ h5 {
   margin: 50px;
 }
 
+.margin-destinos {
+  margin-top: 50px;
+}
+
 /* pantalla mobile */
-@media (max-width: 700px) {
-  .container-map iframe {
-    width: 360px;
+@media (max-width: 600px) {
+  .container-destinos {
+    margin: 10px;
   }
 }
-/* flexbox en los destinos */
-.container-destinos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* pantalla completa */
+@media (min-width: 1200px) {
+  .container-destinos {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

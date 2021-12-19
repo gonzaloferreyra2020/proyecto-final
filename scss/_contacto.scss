@@ -60,6 +60,12 @@ padding: 0;
     padding: .5em;
 }
 
+@media (max-width:699px){
+
+    .info-contacto ul li{
+        color: rgb(28, 179, 199);;
+    }
+}
 
 /* pantalla media */
 @media (min-width:700px){
